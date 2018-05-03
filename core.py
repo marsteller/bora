@@ -214,7 +214,7 @@ class DesignerHandler(tornado.web.RequestHandler):
 
 class VersionHandler(tornado.web.RequestHandler):
     def get(self):
-        response = {'version': '0.0.1',
+        response = {'version': '1.0.0',
                     'last_build': date.today().isoformat()}
         self.write(response)
 
